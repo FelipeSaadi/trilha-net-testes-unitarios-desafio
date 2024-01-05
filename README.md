@@ -78,4 +78,4 @@ O projeto está estruturado da seguinte maneira:
 
 
 ## Solução
-Implementação de testes dos código e implementação de testes unitários por caso de uso. 
+Implementação de testes dos códigos e implementação de testes unitários por caso de uso. 
