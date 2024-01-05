@@ -11,8 +11,9 @@ Console.WriteLine($"Maior valor: {maiorValor}");
 var menorValor = validacoesLista.RetornarMenorNumeroLista(lista);
 Console.WriteLine($"Menor valor: {menorValor}");
 
-var multiplicacao = validacoesLista.MultiplicarNumerosLista(lista, 2);
-Console.WriteLine($"Multiplicação de {String.Join(", ", lista)} é {String.Join(", ", multiplicacao)}");
+var multiplicador = 2;
+var multiplicacao = validacoesLista.MultiplicarNumerosLista(lista, multiplicador);
+Console.WriteLine($"Multiplicação de {String.Join(", ", lista)} por {multiplicador} é {String.Join(", ", multiplicacao)}");
 
 int valor = 2;
 var contemNumero = validacoesLista.ListaContemDeterminadoNumero(lista, valor);
