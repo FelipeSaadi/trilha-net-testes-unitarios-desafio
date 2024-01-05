@@ -15,14 +15,13 @@ var multiplicacao = validacoesLista.MultiplicarNumerosLista(lista, 2);
 Console.WriteLine($"Multiplicação de {String.Join(", ", lista)} é {String.Join(", ", multiplicacao)}");
 
 int valor = 2;
-Console.WriteLine($"A lista contem o valor {valor}?");
 var contemNumero = validacoesLista.ListaContemDeterminadoNumero(lista, valor);
 
 if(contemNumero) {
-  Console.WriteLine("Sim");
+  Console.WriteLine($"A lista contem o valor '{valor}'");
 }
 else {
-  Console.WriteLine("Não");
+  Console.WriteLine($"A lista não contem o valor '{valor}'");
 }
 
 Console.WriteLine("");
@@ -31,14 +30,14 @@ Console.WriteLine("");
 ValidacoesString validacoesString = new();
 
 string texto = "Hello World";
-string caractere = "o";
+string caractere = "d";
 
 var contemCaractere = validacoesString.ContemCaractere(texto, caractere);
 if(contemCaractere) {
-  Console.WriteLine($"A palavra {texto} contém o caractere");
+  Console.WriteLine($"A palavra {texto} contém o caractere '{caractere}'");
 }
 else {
-  Console.WriteLine($"A palavra {texto} não contém o caractere");
+  Console.WriteLine($"A palavra {texto} não contém o caractere '{caractere}'");
 }
 
 var quantidadeCaracteres = validacoesString.RetornarQuantidadeCaracteres(texto);
@@ -46,8 +45,8 @@ Console.WriteLine($"O texto {texto} possui {quantidadeCaracteres} caracteres");
 
 var terminaCom = validacoesString.TextoTerminaCom(texto, caractere);
 if(terminaCom) {
-  Console.WriteLine($"O texto {texto} temina com o caractere");
+  Console.WriteLine($"O texto {texto} temina com o caractere '{caractere}'");
 }
 else {
-  Console.WriteLine($"O texto {texto} não termina com o caractere");
+  Console.WriteLine($"O texto {texto} não termina com o caractere '{caractere}'");
 }
